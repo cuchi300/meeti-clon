@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.bg-image{
+    background-image: linear-gradient(to bottom, transparentize(v.$negro, .5%) 0%, transparentize(v.$negro, .5%) 100%), url(../img/hero.jpg);
+    background-size: cover;
+    padding: 2rem;
+    overflow: hidden;
+}
+.iniciar{
+    max-width: 50rem;
+    display: grid;
+    place-content: center;
+    padding-top: 5rem;
+    &__contenido{
+        padding: 5rem;
+        height: 100%;
+        background-color: v.$blanco;
+        border-radius: 1rem;
+    }
+    &__imagen{
+        margin: 0 auto;
+    }
+    &__formulario{
+        padding: 2rem 0;
+    }
+    &__heading{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0 0 3rem 0;
+        text-transform: uppercase;
+    }
+    &__campo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    &__label{
+        flex-basis: 15rem;
+        font-weight: 700;
+    }
+    &__input{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid v.$grisClaro;
+    }
+    &__submit{
+        @include m.boton(v.$secundario, v.$blanco);
+        font-size: 1.7rem;
+        padding: 1rem 5rem;
+        display: block;
+        margin: 3rem auto 0;
+        cursor: pointer;
+    }
+    &__texto{
+        margin: 0;
+    }
+    &__enlaces{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    &__enlace{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__inicio{
+    padding: 0;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <!-- HOJAS DE ESTILO -->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <div class="bg-image">
+        <header class="iniciar contenedor">
+            <div class="iniciar__contenido">
+                <div class="iniciar__logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="build/img/logo.avif" type="image/avif">
+                            <source srcset="build/img/logo.webp" type="image/webp">
+                            <img class="iniciar__imagen" loading="lazy" src="build/img/logo.jpg" alt="imagen logo">
+                        </picture>
+                    </a>
+                </div>
+
+                <form action="" class="iniciar__formulario">
+
+                    <div class="iniciar__campo">
+                        <label for="cuenta" class="iniciar__label">Usuario</label>
+                        <input type="email" id="cuenta" class="iniciar__input" placeholder="Tu Usuario" required>
+                    </div>
+                    <div class="iniciar__campo">
+                        <label for="contraseña" class="iniciar__label">Contraseña</label>
+                        <input type="password" id="contraseña" class="iniciar__input" placeholder="Tu Contraseña" required>
+                    </div>
+
+                    <div class="iniciar__campo">
+                        <label for="email" class="iniciar__label">Email</label>
+                        <input type="email" id="email" class="iniciar__input" placeholder="Tu Email" required>
+                    </div>
+
+                    <div class="iniciar__campo">
+                        <label for="edad" class="iniciar__label">Edad</label>
+                        <input type="number" id="edad" class="iniciar__input" placeholder="¿Que edad?" min="0" max="120">
+                    </div>
+
+                    <input type="submit" class="iniciar__submit" value="Crear Cuenta">
+                </form>
+
+                <div class="iniciar__enlaces">
+                    <p class="iniciar__texto">¿Ya tenes una cuenta?</p>
+                    <a href="iniciar.html" class="iniciar__enlace">Inicia Sesión</a>
+                </div>
+            </div>
+        </header>
+
+        <footer class="footer contenedor">
+            <p class="footer__copyright footer__copyright--inicio">Todos los derechos reservados &copy; 2022. Desarrollado por <span class="footer__copyright--span">Miguel Agustin Baiud</span></p>
+        </footer>
+    </div>
+</body>
+</html>

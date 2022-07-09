@@ -1,0 +1,2 @@
+function iniciarApp(){navegacionFija()}function navegacionFija(){const e=document.querySelector(".header"),o=document.querySelector(".hero"),n=document.querySelector("body");window.addEventListener("scroll",(function(){o.getBoundingClientRect().bottom<0?(e.classList.add("fijo"),n.classList.add("body-scroll")):(e.classList.remove("fijo"),n.classList.remove("body-scroll"))}))}document.addEventListener("DOMContentLoaded",(function(){iniciarApp()}));
+//# sourceMappingURL=app.js.map

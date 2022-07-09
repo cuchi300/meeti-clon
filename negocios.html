@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeti</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches" rel="stylesheet">
+    <!-- HOJAS DE ESTILO -->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <a href="index.html">
+                <picture>
+                     <source srcset="build/img/logo.avif" type="image/avif">
+                     <source srcset="build/img/logo.webp" type="image/webp">
+                     <img loading="lazy" src="build/img/logo.jpg" alt="imagen logo">
+                </picture>
+            </a>
+        </div>
+
+        <nav class="navegacion">
+            <a href="iniciar.html" class="navegacion__enlace">Iniciar Sesion</a>
+            <a href="registro.html" class="navegacion__enlace">Registrarse</a>
+        </nav>
+    </header>
+
+    <section class="meeti contenedor">
+        <h2 class="meeti__heading">Ideas de Negocios</h2>
+
+        <div class="meeti__grid">
+            <div class="meeti__contenido">
+                <div class="video">
+                    <div class="video__overlay">
+                        <h2 class="video__nombre-evento">Obtene las mejores ideas para emprender en tu negocio</h2>
+                    </div>
+                    <video class="video__media" autoplay loop muted>
+                        <source src="video/negocio.mp4">
+                    </video>
+                </div>
+                <div class="video__descripcion">
+                    <p class="video__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed, temporibus distinctio modi eligendi voluptate qui pariatur illo suscipit repellendus atque dolor blanditiis. Dicta voluptas illum tempora est natus inventore!</p>
+                    <p class="video__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed, temporibus distinctio modi eligendi voluptate qui pariatur illo suscipit repellendus atque dolor blanditiis. Dicta voluptas illum tempora est natus inventore!</p>
+
+                    <div class="evento__autor">
+                        <div class="evento__autor-imagen">
+                            <picture>
+                                 <source srcset="build/img/perfil1.avif" type="image/avif">
+                                 <source srcset="build/img/perfil1.webp" type="image/webp">
+                                 <img loading="lazy" src="build/img/perfil1.jpg" alt="imagen perfil">
+                            </picture>
+                        </div>
+                        <div class="evento__autor-informacion">
+                            <p class="evento__organizado-texto">Organizado por:</p>
+                            <p class="evento__organizado-nombre">Miguel Agustin Baiud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <iframe class="sidebar__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14550.46486317109!2d-65.2738462!3d-24.2551983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1657321000005!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="sidebar__contenido">
+                    <h3 class="sidebar__heading">Información Evento</h3>
+                    <p class="sidebar__fecha"><span class="sidebar__span">Fecha:</span> 30 de Diciembre de 2022</p>
+                    <p class="sidebar__hora"><span class="sidebar__span">Hora:</span> 20:30</p>
+                    <p class="sidebar__ubicacion"><span class="sidebar__span">Ubicacion:</span> Av.Avellaneda 3033</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer contenedor">
+
+        <nav class="navegacion">
+            <a href="iniciar.html" class="navegacion__enlace">Iniciar Sesion</a>
+            <a href="registro.html" class="navegacion__enlace">Registrarse</a>
+        </nav>
+
+        <p class="footer__copyright">Todos los derechos reservados &copy; 2022. Desarrollado por <span class="footer__copyright--span">Miguel Agustin Baiud</span></p>
+    </footer>
+</body>
+</html>

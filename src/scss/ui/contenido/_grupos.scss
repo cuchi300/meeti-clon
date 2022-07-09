@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.grupos{
+    color: v.$blanco;
+    padding: 5rem 0;
+
+    background-image: linear-gradient(to bottom, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+    @include m.tablet {
+        background-image: linear-gradient(to right, v.$primario 0%, v.$primario 50%, v.$secundario 50%, v.$secundario 100%);
+        
+    }
+    &__grid{
+        @include m.grid(1,5rem);
+        @include m.tablet {
+            @include m.grid(2, 5rem);
+        }
+    }
+
+    
+}
+
+.grupo{
+
+    &__heading{
+        font-size: 3rem;
+        @include m.tablet {
+            font-size: 4rem;
+        }
+    }
+
+    &__texto{
+        font-size: 1.6rem;
+        color: v.$blanco;
+        @include m.tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__enlace{
+        @include m.boton(v.$secundario, v.$blanco);
+        transition: transform .2s, background-color .2s;
+        &:hover{
+            transform: scale(0.9);
+        }
+        &--morado{
+            @include m.boton(v.$primario, v.$blanco);
+            transition: transform .2s, background-color .2s;
+
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+}
